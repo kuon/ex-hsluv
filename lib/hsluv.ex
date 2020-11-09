@@ -64,10 +64,12 @@ defmodule HSLuv do
   @doc """
   Convert HSLuv to RGB.
 
+  Returned components are between 0 and 255 included
+
   ## Examples
 
       iex> HSLuv.to_rgb(20, 50, 20)
-      {0.2934644509325827, 0.14978226541818696, 0.12310538660115919}
+      {75, 38, 31}
   """
   def to_rgb(h, s, l) do
     new(h, s, l)
@@ -75,7 +77,8 @@ defmodule HSLuv do
   end
 
   def to_rgb(%HSLuv{h: h, s: s, l: l}) do
-    hsluv_to_rgb({h, s, l})
+    {r, g, b} = hsluv_to_rgb({h, s, l})
+    {round(r * 255.0), round(g * 255.0), round(b * 255.0)}
   end
 
   @doc """
