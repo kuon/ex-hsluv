@@ -2,6 +2,10 @@
 
 Elixir library to convert RGB to HSLuv and vice versa.
 
+HSLuv is a color space for easy color manipulation in perceptual space.
+
+<https://www.hsluv.org/>
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
