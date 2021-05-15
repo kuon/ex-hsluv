@@ -64,6 +64,10 @@ defmodule HSLuv do
   @doc """
   Convert HSLuv to RGB.
 
+  - `h` must be between 0 and 360 included
+  - `s` must be between 0 and 100 included
+  - `l` must be between 0 and 100 included
+
   Returned components are between 0 and 255 included
 
   ## Examples
