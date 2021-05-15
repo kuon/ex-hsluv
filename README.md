@@ -14,7 +14,7 @@ by adding `hsluv` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:hsluv, "~> 0.1.0"}
+    {:hsluv, "~> 0.2.0"}
   ]
 end
 ```
@@ -31,9 +31,9 @@ be found at [https://hexdocs.pm/hsluv](https://hexdocs.pm/hsluv).
 iex> HSLuv.rgb(200, 150, 20)
 %HSLuv{h: 57.26077539223336, l: 65.07659371178795, s: 97.61326139925325}
 
-# Convert RGB to HSLuv tuple (0-255)
+# Convert HSL values to RGB (0-255)
 iex> HSLuv.to_rgb(20, 50, 20)
-{0.2934644509325827, 0.14978226541818696, 0.12310538660115919}
+{75, 38, 31}
 ```
 
 ## License
