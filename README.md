@@ -26,7 +26,7 @@ be found at [https://hexdocs.pm/hsluv](https://hexdocs.pm/hsluv).
 
 ## Example
 
-```iex
+```elixir
 # Create an HSLuv color from RGB values (0-255)
 iex> HSLuv.rgb(200, 150, 20)
 %HSLuv{h: 57.26077539223336, l: 65.07659371178795, s: 97.61326139925325}
