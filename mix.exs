@@ -11,7 +11,7 @@ defmodule Hsluv.MixProject do
       description: description(),
       package: package(),
       name: "HSLuv",
-      source_url: "https://git.goyman.com/kuon/ex-hsluv"
+      source_url: "https://github.com/kuon/ex-hsluv"
     ]
   end
 
@@ -37,7 +37,7 @@ defmodule Hsluv.MixProject do
   defp package() do
     [
       licenses: ["Apache-2.0", "MIT"],
-      links: %{"Git" => "https://git.goyman.com/kuon/ex-hsluv"}
+      links: %{"Git" => "https://github.com/kuon/ex-hsluv"}
     ]
   end
 end
